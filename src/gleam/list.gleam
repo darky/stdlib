@@ -260,6 +260,7 @@ fn update_group(
 ///
 /// ```gleam
 /// import gleam/dict
+///
 /// group([1,2,3,4,5], by: fn(i) { i - i / 3 * 3 })
 /// |> dict.to_list
 /// // -> [#(0, [3]), #(1, [4, 1]), #(2, [5, 2])]
@@ -1249,6 +1250,7 @@ fn merge_sort(
 ///
 /// ```gleam
 /// import gleam/int
+///
 /// sort([4, 3, 6, 5, 4, 1, 2], by: int.compare)
 /// // -> [1, 2, 3, 4, 4, 5, 6]
 /// ```
@@ -1605,6 +1607,7 @@ pub fn key_set(list: List(#(a, b)), key: a, value: b) -> List(#(a, b)) {
 ///
 /// ```gleam
 /// import gleam/io
+///
 /// each(["1", "2", "3"], io.println)
 /// // -> Nil
 /// // 1
@@ -1670,6 +1673,7 @@ fn do_partition(list, categorise, trues, falses) {
 ///
 /// ```gleam
 /// import gleam/int
+///
 /// [1, 2, 3, 4, 5] |> partition(int.is_odd)
 /// // -> #([1, 3, 5], [2, 4])
 /// ```
